@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- WALLPAPER -->
     <div class="wallpaper">
         <div class="div-1-wallace-beats-logo">
             <div class="div-2-wallace-beats-logo">
@@ -23,14 +24,17 @@
             </div>
         </div>
     </div>
+    <!-- INTERFACE -->
     <div class="interface">
+        <!-- TITLE OF THE SONG -->
         <div class="title-of-the-song">
             <div class="text-zone"></div>
         </div>
+        <!-- MENU -->
         <div class="menu"></div>
         <div class="navbar">
             <div class="div-button">
-                <button class="button-menu">
+                <button class="button-menu" onclick="popupMenu('popup-menu')">
                     <img class="button-img" src="logos/burger-bar-button.png" alt="Menu">
                 </button>
             </div>
@@ -50,7 +54,16 @@
                 </button>
             </div>
         </div>
+        <!-- POP-UP MENU -->
+        <div class="popup">
+            <div class="space"></div>
+            <div class="popup-menu" id="popup-menu">
+                <div class="popup-content"></div>
+            </div>
+            <div class="space"></div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

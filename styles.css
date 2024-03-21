@@ -5,6 +5,7 @@
     font-style: normal;
     color: black;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -22,34 +23,6 @@ body {
     justify-content: space-around;
     background-color: black;
     z-index: 1;
-}
-
-.wallpaper.blur {
-    animation: blur 1s forwards;
-}
-
-@keyframes blur {
-    0% {
-        filter: blur(0);
-    }
-
-    100% {
-        filter: blur(3px);
-    }
-}
-
-.wallpaper.unblur {
-    animation: unblur 1.5s forwards;
-}
-
-@keyframes unblur {
-    0% {
-        filter: blur(3px);
-    }
-
-    100% {
-        filter: blur(0);
-    }
 }
 
 .div-1-wallace-beats-logo {
@@ -223,68 +196,8 @@ button:active {
 .button-img {
     height: 70%;
     width: 70%;
-}
-
-/* POP-UP MENU */
-
-.popup {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.space {
-    height: 100px;
-    width: 100%;
-}
-
-.popup-menu {
-    height: 430px;
-    width: 333.75px;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.9);
-    opacity: 0;
-    z-index: 0;
-    display: none;
-    transform: translate(-0%, -0%) scale(0);
-    animation: fadeInScale 0.5s forwards;
-}
-
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        z-index: 0;
-        transform: translate(-0%, -0%) scale(0);
-    }
-
-    to {
-        opacity: 1;
-        z-index: 1;
-        transform: translate(-0%, -0%) scale(1);
-    }
-}
-
-@keyframes fadeOutScale {
-    from {
-        opacity: 1;
-        z-index: 1;
-        transform: translate(-0%, -0%) scale(1);
-    }
-
-    to {
-        opacity: 0;
-        z-index: 0;
-        transform: translate(-0%, -0%) scale(0);
-    }
-}
-
-.popup-content {
-    height: 100%;
-    width: 260px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 /* POSITIONS */
@@ -293,8 +206,7 @@ button:active {
 
 body,
 .wallpaper,
-.interface,
-.popup {
+.interface {
     position: absolute;
 }
 
@@ -309,10 +221,7 @@ body,
 .navbar,
 .div-button,
 button,
-.button-img,
-.space,
-.popup-menu,
-.popup-content {
+.button-img {
     position: relative;
 }
 
@@ -329,9 +238,6 @@ button,
 .navbar,
 .div-button,
 button,
-.button-img,
-.popup,
-.space,
-.popup-content {
+.button-img {
     display: flex;
 }
